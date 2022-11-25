@@ -1,0 +1,99 @@
+body{
+    background-color: var(--radio-color);
+}
+.topBox{
+    width: 70%;
+    height: 140px;
+    border: 5px solid black;
+    border-color: rgb(195, 195, 195);
+    text-align: center;
+    margin: auto;
+    /* margin-top: 50px; */
+}
+.Bottom{
+    width: 71%;
+    margin: 0px auto;
+    /* margin-left: 100px; */
+    /* width: 1300px; */
+    /* justify-content: space-around; */
+}
+.ChangeTheme{
+    padding-top: 50px;
+}
+.Field{
+    width: 800px;
+    border: 0px solid white;
+    text-align: center;
+    margin: auto;
+}
+.Movies-Box{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    border: 3px solid white;
+}
+
+.ChangeTheme{
+   background-color: transparent;
+   border: none;
+}
+.Field{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+  input[type = "radio"]{
+    appearance: none;
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 2px solid;
+    border-radius: 50%;
+  }
+  input[type = "radio"]:checked{
+    background-color: var(--radio-color);
+  }
+  .input{
+    background-color: #fff;
+    border: 1px solid #00000030;
+  }
+  .changer{
+    border: none;
+  }
+  #Light{
+    --radio-color:grey;
+  }
+  #Blue{
+    --radio-color:grey;
+  }
+  #Dark{
+    --radio-color:grey;
+  }
+  #BabyPink{
+    --radio-color:grey;
+  }
+  #Orange{
+    --radio-color:grey;
+  }
+  :root:has(#Light:checked)
+  {
+    background-color: rgb(205,183,187);
+  }
+  :root:has(#Blue:checked)
+  {
+    background-color: #7a0bc0;
+  }
+  :root:has(#Dark:checked)
+  {
+    background-color: #52ACFF;
+  }
+  :root:has(#BabyPink:checked)
+  {
+  background-color: #85FFBD;
+  }
+  :root:has(#Orange:checked)
+  {
+  background-color: orange;
+  }
